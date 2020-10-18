@@ -31,7 +31,7 @@ const populateSheet = async (sheetHeaders, data) => {
       for (row of data) {
         idInSheet = false
         for (i = 0; i < sheetRows.length; i++) {
-          if (sheetRows[i].id_sha == row.id) {
+          if (sheetRows[i].id_sha == row.id_sha) {
             idInSheet = true
             break;
           }
